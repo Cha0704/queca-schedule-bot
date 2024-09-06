@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-def main():
+def get_data():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
 
