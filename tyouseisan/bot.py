@@ -25,7 +25,7 @@ def main():
         if data.get(date) and data.get(date)["ok"] >= 3:
             print('I am working')
             await bot.wait_until_ready()
-            channel = bot.get_channel(1278282497188429824)
+            channel = bot.get_channel(1277963321643110421)
             
             mention = ""
             for member in data.get(date)["mention"]:
