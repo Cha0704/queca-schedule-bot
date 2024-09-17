@@ -29,7 +29,7 @@ def main():
             
             mention = ""
             for member in data.get(date)["mention"]:
-                mention += f"@{member} "
+                mention += f"<@{member}> "
 
             text = f'【活動日の確認】\n 明後日{date}は活動日です！ \n  {mention} {date}の活動に確実に来れる場合は🆗 を、そうでない場合は❌ をリアクションしてください。\n (その他の方で活動に参加可能になった方も🆗 にリアクションをお願いします。なお、ここにリアクションしなかったからと言って参加できないわけではありません。) \n 本日 18:00時点で来れる人が2人以下になった場合は活動が取りやめになります。'
             await channel.send(text)
